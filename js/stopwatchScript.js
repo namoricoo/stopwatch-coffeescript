@@ -2,7 +2,15 @@
 var stopWatch;
 
 stopWatch = (function() {
+  var initialize, running;
+
   function stopWatch() {}
+
+  running = '';
+
+  initialize = function() {
+    return running = false;
+  };
 
   return stopWatch;
 
